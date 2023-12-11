@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nome_produto.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Patua+One&display=swap" rel="stylesheet">
+  <title>StockTracker</title>
+</head>
+
+<body>
+  <header>
+    <div id="menuToggle">
+      <div class="dropdown">
+        <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <label for="menutoggle" class="menu-icon">
+            <i class="fa fa-bars"></i>
+          </label>
+        </button>
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" id="btncadastar" type="button">HOME</button></li>
+          <li><button class="dropdown-item" id="btninventario" type="button">Inventario</button></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="titleApp">
+      StockTracker
+    </div>
+    <div class="extra">
+      <a href="http://127.0.0.1:5501/CRUD/nome_produto.html"><img src="img/icons8-mais-24.png" id="img_crud"></a>
+    </div>
+  </header>
+
+
+
+  <main>
+
+    <div class="container">
+      <h1>Cadastro de Produto</h1>
+      <label for="produto">Nome do Produto:</label>
+      <input type="text" id="produto" placeholder="Digite o nome do produto">
+
+      <label for="quantidade">Quantidade de Produto:</label>
+      <input type="number" id="quantidade" placeholder="Digite a quantidade do produto">
+
+      <label for="unidade">Valor:</label>
+      <input type="text" id="valor" class="dropdown-select" placeholder="Selecione o valor">
+
+      <label for="unidade">Peso(<i>gramas</i>):</label>
+      <input type="text" id="peso" class="dropdown-select" placeholder="Selecione o peso em gramas">
+
+      <label for="unidade">Categoria:</label>
+      <div class="input-group mb-3">
+        <input type="text" id="catego" class="form-control" aria-label="Text input with dropdown button"
+          placeholder="Selecione a categoria ou digite">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false"></button>
+        <ul class="dropdown-menu dropdown-menu-end" id="mostracat">
+
+        </ul>
+      </div>
+
+    </div>
+    </div>
+
+
+
+    <div class="container">
+      <p><i>Validade apenas se necessário</i></p>
+      <div id="data">
+        <input type="number" id="mes" class="data" placeholder="Mês">
+        <input type="number" id="ano" class="data" placeholder="Ano">
+      </div>
+      <br>
+
+      <button onclick="decrementarMes()">&#9665;</button>
+      <button onclick="incrementarMes()">&#9655;</button>
+      <button onclick="decrementarAno()">&#9665;</button>
+      <button onclick="incrementarAno()">&#9655;</button>
+      <br>
+      <button id="excluir" onclick="limparCampos()" style="background-color: red;">Excluir</button>
+      <button id="confirmar" onclick="confirmarCadastro()">Confirmar</button>
+      <p id="mensagem"></p>
+    </div>
+
+    <div id="mensagem"></div>
+    <div id="proximo">
+      <button class="proximo" onclick="proximoTela()">Próximo</button>
+    </div>
+  </main>
+
+
+  <footer>
+    <div id="caixaFotter">
+
+      <a href="#"><img src="img/icons8-voltar-50.png" id="img_retorno"></a>
+      <!-- muda o # para o endereço da pagina inicial -->
+    </div>
+  </footer>
+
+  <script src="nome_produto.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function imprimeDado() {
+      var cat = document.getElementById('mostracat')
+      var srtHTML = ''
+      for (i in Categorias) {
+        console.log(Categorias[i])
+        srtHTML += `<li><a class="dropdown-item" href="#" onclick="preencherInput('${Categorias[i].cat}')">${Categorias[i].cat}</a></li>`
+
+      }
+
+      cat.innerHTML = srtHTML
+
+    }
+    carregaDadosJSONServerCat(imprimeDado)
+
+  </script>
+
+</body>
+
+</html>

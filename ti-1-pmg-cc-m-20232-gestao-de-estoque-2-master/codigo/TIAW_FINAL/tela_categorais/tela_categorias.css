@@ -1,0 +1,150 @@
+body {
+
+    margin: 0px;
+    z-index: 1;
+    box-sizing: border-box;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 70;
+    background-color: #88db96;
+    padding: 2px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#menuToggle {
+
+    margin-left: px;
+    padding: 0px 5px;
+    position: relative;
+
+
+}
+
+#titleApp {
+    font-family: 'Patua One', serif;
+    font-size: larger;
+    margin: 0 auto;
+    z-index: 6;
+
+}
+
+main {
+    margin-top: 60px;
+    padding: 2px;
+    margin-bottom: 42px;
+}
+
+
+
+
+
+#caixaFotter {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    top: 85%;
+}
+
+#img_retorno {
+    margin-right: 25px;
+    width: 25px;
+    height: 25px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40px;
+    background-color: #88db96;
+}
+
+#img_crud {
+    margin-right: 25px;
+}
+
+.dropdown ul {
+    background-color: rgb(114, 184, 126)
+}
+
+#mostra_categorias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+}
+#link_categorias {
+    text-decoration: none;
+    color: black;
+    
+}
+.categorias_prd {
+    box-sizing: border-box;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(92, 92, 92, 0.192);
+    border-radius: 25px;
+    margin: 0 15px 13px 0;
+    height: 40px;
+    width: 130px;
+
+
+}
+
+
+
+
+
+
+/*---------- FOTTER ------------*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40px;
+    background-color: #88db96;
+}
+
+
+#caixaFotter{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    top: 85%;
+}
+
+#img_retorno{
+    margin-right: 25px;
+    width: 25px;
+    height: 25px;
+}
+#img_crud{
+    margin-right: 25px;
+    }

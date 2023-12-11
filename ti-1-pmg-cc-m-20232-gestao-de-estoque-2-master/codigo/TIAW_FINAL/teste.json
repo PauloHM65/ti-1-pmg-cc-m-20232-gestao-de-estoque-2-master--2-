@@ -1,0 +1,102 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Maça",
+            "peso": 45,
+            "valor": 45,
+            "Qtd": 45,
+            "ano": null,
+            "mes": null,
+            "categoria": "Frutas"
+        },
+        {
+            "id": 2,
+            "nome": "Pera",
+            "peso": 4,
+            "valor": 4,
+            "Qtd": 4,
+            "ano": null,
+            "mes": null,
+            "categoria": "Frutas"
+        },
+        {
+            "id": 5,
+            "nome": "Milho",
+            "peso": 6,
+            "valor": 457,
+            "Qtd": 75,
+            "ano": 2025,
+            "mes": 2,
+            "categoria": "Enlatados"
+        },
+        {
+            "id": 8,
+            "nome": "Ervilha",
+            "peso": 6,
+            "valor": 457,
+            "Qtd": 75,
+            "ano": 2026,
+            "mes": 2,
+            "categoria": "Enlatados"
+        },
+        {
+            "id": 12,
+            "nome": "Doce de Leite",
+            "peso": 6,
+            "valor": 457,
+            "Qtd": 75,
+            "ano": null,
+            "mes": null,
+            "categoria": "Enlatados"
+        },
+        {
+            "id": 17,
+            "nome": "Doce de Pessego",
+            "peso": 42,
+            "valor": 42,
+            "Qtd": 50,
+            "ano": 2024,
+            "mes": 3,
+            "categoria": "Doces"
+        },
+        {
+            "id": 23,
+            "nome": "Doce de Figo",
+            "peso": 51,
+            "valor": 61,
+            "Qtd": 56,
+            "ano": 2024,
+            "mes": 3,
+            "categoria": "Doces"
+        },
+        {
+            "id": 30,
+            "nome": "xxx",
+            "peso": 1,
+            "valor": 1,
+            "Qtd": 1,
+            "ano": null,
+            "mes": null,
+            "categoria": "Doces"
+        }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "cat": "Frutas"
+        },
+        {
+            "id": 2,
+            "cat": "Enlatados"
+        },
+        {
+            "id": 3,
+            "cat": "Doces"
+        },
+        {
+            "id": 4,
+            "cat": "Leite"
+        }
+    ]
+}

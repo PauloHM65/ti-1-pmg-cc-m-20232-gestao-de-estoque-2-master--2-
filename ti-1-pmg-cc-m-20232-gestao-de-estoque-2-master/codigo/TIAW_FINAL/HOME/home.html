@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Patua+One&display=swap" rel="stylesheet">
+    <title>StockTracker</title>
+</head>
+
+<body>
+    <header>
+        <div id="menuToggle">
+            <div class="dropdown">
+                <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <label for="menutoggle" class="menu-icon">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" id="btncadastar" type="button">HOME</button></li>
+                    <li><button class="dropdown-item" id="btninventario" type="button">Inventario</button></li>
+                </ul>
+            </div>
+
+        </div>
+
+        
+        <div class="extra">
+            <a href="http://127.0.0.1:5501/CRUD/nome_produto.html"><img src="img/icons8-mais-24.png" id="img_crud"></a>
+        </div>
+    </header>
+
+    <main>
+        <!--  Aparecer apenas os nomes das categorias 
+        o usuario clica e direciona para o inventario indicado-->
+        <div id="titleApp">
+            <p>StockTracker</p>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div id="caixaFotter">
+
+            <a href="#"><img src="img/icons8-voltar-50.png" id="img_retorno"></a>
+            <!-- muda o # para o endereço da pagina inicial -->
+        </div>
+    </footer>
+
+
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

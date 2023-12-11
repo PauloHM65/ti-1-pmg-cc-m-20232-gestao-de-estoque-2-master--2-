@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    min-height: 100vh;
+    background-color: #88db96;
+    z-index: 1;
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 70;
+    background-color: #88db96;
+    padding: 2px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#menuToggle{
+   
+   margin-left: px;
+   padding: 0px 5px;
+   position: relative;
+
+   
+}
+#titleApp{
+    font-family:'Patua One', serif;;
+    font-size:larger;
+    
+    margin: 0 auto;
+    z-index: 6;
+    
+}
+.dropdown ul{
+    background-color: rgb(114, 184, 126)
+    
+}
+
+
+/*--------- MAIN -----------*/
+
+main{
+    padding: 2px;
+
+}
+
+
+/*---------- FOTTER ------------*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 40px;
+    background-color: #88db96;
+}
+
+
+#caixaFotter{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    top: 85%;
+}
+
+#img_retorno{
+    margin-right: 25px;
+    width: 25px;
+    height: 25px;
+}
+#img_crud{
+    margin-right: 25px;
+    }
